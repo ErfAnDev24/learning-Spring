@@ -4,10 +4,14 @@ import javax.annotation.PostConstruct;
 
 public class HelloWorld {
 	
+	private String message;
 	
-	@PostConstruct
-	public void MyMethod() {
-		System.out.println("Second");
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	public void getMessage() {
+		System.out.println("your message is : " + message);
 	}
 	
 }
