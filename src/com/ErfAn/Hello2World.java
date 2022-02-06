@@ -2,10 +2,22 @@ package com.ErfAn;
 
 import javax.annotation.PostConstruct;
 
-public class Hello2World {
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 
-	@PostConstruct
-	public void anotherMethod() {
-		System.out.println("First");
+public class Hello2World implements BeanPostProcessor{
+	
+	@Override
+	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+		System.out.println("Before : " + beanName);
+		return bean;
+		}
+
+	@Override
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+		System.out.println("After : " + beanName);
+		return bean;
 	}
+	
 }
+

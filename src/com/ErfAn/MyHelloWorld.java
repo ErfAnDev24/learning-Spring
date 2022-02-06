@@ -1,12 +1,7 @@
 package com.ErfAn;
 
-import javax.annotation.PostConstruct;
+public class MyHelloWorld {
 
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.config.BeanPostProcessor;
-
-public class HelloWorld{
-	
 	private String message;
 	
 	public void setMessage(String message) {
@@ -18,13 +13,12 @@ public class HelloWorld{
 	}
 	
 	public void destroy() {
-		System.out.println("destruction!");
+		System.out.println("Myyyydestruction!");
 	}
 	
 	public void init() {
-		System.out.println("initialization!");
+		System.out.println("Myyyyyinitialization!");
 	}
 
-	
 	
 }
