@@ -6,8 +6,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
   <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
-  <bean id="myBean" class="com.ErfAn.Hello2World"></bean>
-<bean id="helloWorld" class="com.ErfAn.HelloWorld" lazy-init="true"></bean>
+  <bean id="hello2World" class="com.ErfAn.Hello2World" destroy-method="destroyMethod"></bean>
+<bean id="helloWorld" class="com.ErfAn.HelloWorld" init-method="init"></bean>
 </beans>
 
 

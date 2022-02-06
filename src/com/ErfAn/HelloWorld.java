@@ -5,9 +5,8 @@ import javax.annotation.PostConstruct;
 public class HelloWorld {
 	
 	
-	@PostConstruct
-	public void MyMethod() {
-		System.out.println("Second");
-	}
+public void init() {
+	System.out.println("init");
+}
 	
 }

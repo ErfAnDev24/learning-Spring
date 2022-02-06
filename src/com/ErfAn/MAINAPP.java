@@ -12,7 +12,8 @@ public class MAINAPP {
 		System.out.println("Hi");
 		
 		HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
-		Hello2World obj2 = (Hello2World) context.getBean("myBean");
+		Hello2World obj2 = (Hello2World) context.getBean("hello2World");
+		
 		
 	}
 }
