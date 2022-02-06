@@ -1,17 +1,13 @@
 package com.ErfAn;
 
+import javax.annotation.PostConstruct;
+
 public class HelloWorld {
 	
-	private String message;
-
-
-	public void getMessage() {
-		System.out.println("Your Message : " + message);
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
 	
+	@PostConstruct
+	public void MyMethod() {
+		System.out.println("Second");
+	}
 	
 }

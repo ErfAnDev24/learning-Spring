@@ -74,5 +74,6 @@
 	<classpathentry kind="lib" path="J:/Spring install/spring-framework-5.3.9/libs/spring-websocket-5.3.9.jar"/>
 	<classpathentry kind="lib" path="J:/Spring install/spring-framework-5.3.9/libs/spring-websocket-5.3.9-javadoc.jar"/>
 	<classpathentry kind="lib" path="J:/Spring install/spring-framework-5.3.9/libs/spring-websocket-5.3.9-sources.jar"/>
+	<classpathentry kind="lib" path="J:/Spring install/spring-framework-5.3.9/javax.annotation-api-1.3.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
