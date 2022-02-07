@@ -1,9 +1,10 @@
 package com.ErfAn;
 
-public class HelloWorld {
-
+public class Child {
 	private String message1;
 	private String message2;
+	private String message3;
+	
 	
 	public void getMessage1() {
 		System.out.println("your message1 is : "+message1);
@@ -18,5 +19,12 @@ public class HelloWorld {
 		this.message2 = message2;
 	}
 	
+	public void setMessage3(String message3) {
+		this.message3 = message3;
+	}
+	
+	public void getMessage3() {
+		System.out.println("your message3 is : "+message3);
+	}
 	
 }

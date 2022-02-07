@@ -1,1 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+ <bean id="helloWorld" class="com.ErfAn.HelloWorld">
+ <property name="message1" value="Hi"></property>
+ <property name="message2" value="Hi,i'm ErfAn Pezeshkpour"></property>
+ </bean>
+ 
+ <bean id="child" class="com.ErfAn.Child" parent="helloWorld">
+ <property name="message3" value="Hi,I'm ErfAn Pezeshkpour and i have 23 years old"></property>
+ <property name="message2" value="Hello , My name is ErfAn Pezeshkpour"></property>
+ </bean>
+ 
+ </beans>
