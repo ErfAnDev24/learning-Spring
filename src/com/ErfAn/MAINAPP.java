@@ -11,7 +11,12 @@ public abstract class MAINAPP {
 		
 		HelloWorld obj1 =(HelloWorld) context.getBean("helloWorld");
 		
-		obj1.childCheck();
+		obj1.getAddressList();
 		
+		obj1.getAddressSet();
+		
+		obj1.getAddressMap();
+		
+		obj1.getAddressProps();
 	}
 }

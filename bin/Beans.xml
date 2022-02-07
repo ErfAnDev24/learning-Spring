@@ -5,9 +5,44 @@
  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
  
 <bean id="helloWorld" class="com.ErfAn.HelloWorld">
-<property name="child">
-<bean class="com.ErfAn.Child"></bean>
+
+<property name="addressList">
+	<list>
+		<value>USA</value>
+		<value>Iran</value>
+		<value>USA</value>
+		<value>Spain</value>
+	</list>
 </property>
+
+<property name="addressSet">
+	<set>
+		<value>USA</value>
+		<value>Iran</value>
+		<value>USA</value>
+		<value>Spain</value>
+	</set>
+</property>
+
+<property name="addressMap">
+	<map>
+		<entry key="1" value="USA"></entry>
+		<entry key="2" value="Iran"></entry>
+		<entry key="3" value="China"></entry>
+		<entry key="4" value="USA"></entry>
+	</map>
+</property>
+
+<property name="addressProps">
+	<props>
+		<prop key="1">USA</prop>
+		<prop key="2">Iran</prop>
+		<prop key="3">USA</prop>
+		<prop key="4">Spain</prop>
+	</props>
+</property>
+
 </bean>
+ 
  
  </beans>
