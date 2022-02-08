@@ -11,8 +11,8 @@ public abstract class MAINAPP {
 		ApplicationContext context = 
 				new AnnotationConfigApplicationContext(BeansConfiguration.class);
 		
-		HelloWorld helloWorld = context.getBean(HelloWorld.class);
-		helloWorld.print();
+		Child child = context.getBean(Child.class);
+		SecondChild child2 = context.getBean(SecondChild.class);
 		
 	}
 }

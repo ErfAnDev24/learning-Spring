@@ -9,16 +9,4 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloWorld {
 	
-	private Child child;
-	
-	@Autowired
-	@Qualifier("child1")
-	public void setChild(Child child) {
-		this.child = child;
-	}
-	
-	public void print() {
-		child.setName("ErfAn");
-		System.out.println("your child name is : "+child.getName());
-	}
 }
