@@ -1,16 +1,23 @@
 package com.ErfAn;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
 public class SecondChild {
 
-	public SecondChild() {
-		System.out.println("SeconChild!");
-	}
+	private String message;
 	
-	public void destroy() {
-		System.out.println("destroy Second Child!");
-	}
 	
-	public void init() {
-		System.out.println("init Second Child!");
+	
+	public void getMessage() {
+		System.out.println("your message is : "+message);;
 	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+
 }

@@ -12,9 +12,11 @@ public abstract class MAINAPP {
 		AbstractApplicationContext context = 
 				new AnnotationConfigApplicationContext(BeansConfiguration.class);
 		
-		Child child = context.getBean(Child.class);
-		SecondChild child2 = context.getBean(SecondChild.class);
+		HelloWorld helloWorld = context.getBean(HelloWorld.class);
+
+		helloWorld.setMessage("Hello World!");
+		helloWorld.getMessage();
+		context.stop();
 		
-		context.registerShutdownHook();
 	}
 }
