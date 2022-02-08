@@ -2,6 +2,9 @@ package com.ErfAn;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class HelloWorld {
 	
 	private String message;
