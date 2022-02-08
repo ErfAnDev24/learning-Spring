@@ -4,10 +4,9 @@
  xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
  
-<bean id="helloWorld" class="com.ErfAn.HelloWorld">
-<property name="child">
-<bean class="com.ErfAn.Child"></bean>
-</property>
+<bean id="child1" class="com.ErfAn.Child"></bean>
+
+<bean autowire="byName" id="helloWorld" class="com.ErfAn.HelloWorld">
 </bean>
  
  </beans>

@@ -1,17 +1,17 @@
 package com.ErfAn;
 
-public class HelloWorld {
+import java.util.List;
 
-	private Child child;
+public class HelloWorld {
 	
-	public void setChild(Child child) {
-		System.out.println("setSpellChecker");
-		this.child = child;
+	private String message;
+	
+	public void setMessage(String message) {
+		this.message = message;
 	}
 	
-	public void childCheck() {
-		child.childChecker();
+	public void getMessage() {
+		System.out.println("Your message is : "+message);
 	}
-	
 	
 }

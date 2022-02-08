@@ -3,11 +3,10 @@ package com.ErfAn;
 public class Child {
 
 	public Child() {
-		System.out.println("inside child");
+		System.out.println("Child.class created!");
 	}
 	
-	public void childChecker() {
-		System.out.println("inside of child checker!");
+	public void print() {
+		System.out.println("Child say Hello!");
 	}
-	
 }
