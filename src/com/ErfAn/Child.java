@@ -1,12 +1,17 @@
 package com.ErfAn;
 
+import org.springframework.stereotype.Component;
+
 public class Child {
 
-	public Child() {
-		System.out.println("Child.class created!");
+
+	private String name;
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public void print() {
-		System.out.println("Child say Hello!");
+	public String getName() {
+		return name;
 	}
 }

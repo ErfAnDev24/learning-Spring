@@ -12,9 +12,7 @@ public abstract class MAINAPP {
 				new AnnotationConfigApplicationContext(BeansConfiguration.class);
 		
 		HelloWorld helloWorld = context.getBean(HelloWorld.class);
+		helloWorld.print();
 		
-		helloWorld.setMessage("HelloWorld!");
-		
-		helloWorld.getMessage();
 	}
 }
