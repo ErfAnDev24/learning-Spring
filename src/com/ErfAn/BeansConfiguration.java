@@ -7,12 +7,13 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 @ComponentScan("com.ErfAn")
-@Import(SecondChild.class)
+@Import(SecondBeanConfiguration.class)
 public class BeansConfiguration {
 
-	@Bean
+	@Bean(initMethod = "init" , destroyMethod = "destroy")
 	public Child child() {
 		return new Child();
 	}
+	
 	
 }
